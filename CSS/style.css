@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Il faut mettre l'image par défaut afin de pouvoir modifier ses dimensions.
+Sans cela il faudra mettre des class à chaque image. */
+img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5px; 
+}
+
+body{
+    background: #f0f2f5;
+}
+
+main{
+    background: white;
+    width: 45%;
+    text-align: center;
+    margin: 50px auto;
+    padding: 1px 10px 36px 10px;
+    border-radius: 5px;
+}
+
+H2{
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: initial;
+}
+
+H3{
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: initial;
+}
+
+p{
+    margin: 15px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+table, td, th{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    height: 40px;
+    width: 95%;
+    margin: 50px auto 0px;
+    /* font-family: Arial, Helvetica, sans-serif; --> ancienne police d'écriture */
+    font-family: 'Roboto', sans-serif;
+}
+
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: initial;
+    padding: 5px 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    main{
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width : 850px) and (max-width : 960px){
+
+    main{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width : 700px) and (max-width : 849.9px){
+
+    main{
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 699.9px){
+
+    main{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width : 500px) and (max-width : 599.9px){
+
+    main{
+        width: 85%;
+    }
+}
+
+@media (max-width: 499.9px){
+
+    main{
+        width: 100%;
+    }
+}
